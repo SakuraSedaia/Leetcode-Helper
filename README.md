@@ -16,9 +16,9 @@ The plugin uses LeetCode's public GraphQL endpoint. An internet connection is re
 
 ## Problem setup workflow
 
-The artifact generation workflow currently supports Kotlin only. For other programming languages, use a different setup workflow, or use the LeetCode tool window solely as a problem viewer.
+The artifact generation workflow currently supports Kotlin only. Support for other languages is not planned, but may be implemented by forks or contributions. For other programming languages, use a different setup workflow, or use the LeetCode tool window solely as a problem viewer.
 
-After loading a question, click **Set up starter and test** in the LeetCode tool window. For a Kotlin Gradle project, the plugin creates a separate `Problem<number><Title>` starter under `src/main/kotlin/org/sedaiadesigns`, a matching JUnit 4 test under `src/test/kotlin/org/sedaiadesigns`, and a `.run` Gradle configuration. It updates the plugin-managed `Main.main()` to invoke the current problem and leaves earlier calls commented out. Existing problem files are never overwritten. If an unmanaged `Main.kt` already exists at that path, setup stops before making changes.
+After loading a question, click **Set up Kotlin starter and test** in the LeetCode tool window. For a Kotlin Gradle project, the plugin creates a separate `Problem<number><Title>` starter under `src/main/kotlin/org/sedaiadesigns`, a matching JUnit 4 test under `src/test/kotlin/org/sedaiadesigns`, and a `.run` Gradle configuration. It updates the plugin-managed `Main.main()` to invoke the current problem and leaves earlier calls commented out. Existing problem files are never overwritten. If an unmanaged `Main.kt` already exists at that path, setup stops before making changes.
 
 The generated `solve()` is intentionally unfinished. Run the command shown in the tool window; its test is expected to fail with `NotImplementedError` until you implement the problem. The starter includes a short prompt and up to two examples from LeetCode. The target project must already have JUnit 4 available to its test source set.
 

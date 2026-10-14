@@ -28,7 +28,7 @@ class MyToolWindowFactory : ToolWindowFactory {
     private class QuestionView(private val project: Project) : JPanel(BorderLayout()) {
         private val index = JTextField(7)
         private val load = JButton("Load")
-        private val setup = JButton("Set up starter and test").apply { isEnabled = false }
+        private val setup = JButton("Set up Kotlin starter and test").apply { isEnabled = false }
         private val coach = JButton("Copy instructor prompt").apply { isEnabled = false }
         private val status = JLabel("Enter a LeetCode question number.")
         private var selectedQuestion: Question? = null
