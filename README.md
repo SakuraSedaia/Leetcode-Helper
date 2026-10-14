@@ -2,6 +2,8 @@
 
 An IntelliJ IDEA tool window for reading LeetCode problems by their displayed question number.
 
+This project is 100% AI generated and intended for personal use. Others are welcome to build and use it.
+
 ## Use
 
 Open **View → Tool Windows → LeetCode**, enter a positive question number (for example, `1`), and press **Load** or Enter. The panel displays the title, difficulty, statement, examples, and constraints when LeetCode provides them. **Open on LeetCode** opens the problem in a browser. Premium-only statements require viewing on LeetCode.
