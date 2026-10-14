@@ -1,5 +1,5 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# LeetcodeViewer Changelog
+# Leetcode Helper Changelog
 
 ## [Unreleased]

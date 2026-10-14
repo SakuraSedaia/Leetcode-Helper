@@ -51,7 +51,7 @@ internal object LeetCodeClient {
             .timeout(Duration.ofSeconds(20))
             .header("Content-Type", "application/json")
             .header("Accept", "application/json")
-            .header("User-Agent", "LeetcodeViewer IntelliJ plugin")
+            .header("User-Agent", "Leetcode Helper IntelliJ plugin")
             .POST(HttpRequest.BodyPublishers.ofString(body))
             .build()
         val response = http.send(request, HttpResponse.BodyHandlers.ofString())

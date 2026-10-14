@@ -1,6 +1,6 @@
 import org.jetbrains.intellij.platform.gradle.extensions.intellijPlatform
 
-rootProject.name = "LeetcodeViewer"
+rootProject.name = "LeetcodeHelper"
 
 pluginManagement {
     plugins {

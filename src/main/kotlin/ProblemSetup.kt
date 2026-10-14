@@ -32,7 +32,7 @@ internal object ProblemSetup {
             "This problem already has starter files or a run configuration. Existing work was kept."
         }
         if (Files.exists(main)) require(Files.readString(main).startsWith(MAIN_MARKER)) {
-            "Main.kt exists and is not managed by LeetcodeViewer. Add the call manually; no files were changed."
+            "Main.kt exists and is not managed by Leetcode Helper. Add the call manually; no files were changed."
         }
 
         val excerpt = question.content.replace(Regex("<[^>]+>"), " ")
